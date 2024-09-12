@@ -13,6 +13,10 @@
 		0C1AE18F2C8FA9B4001CAF1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1AE18D2C8FA9B4001CAF1C /* Main.storyboard */; };
 		0C1AE1912C8FA9B6001CAF1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1AE1902C8FA9B6001CAF1C /* Assets.xcassets */; };
 		0C1AE1942C8FA9B6001CAF1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1AE1922C8FA9B6001CAF1C /* LaunchScreen.storyboard */; };
+		0C1AE19F2C8FAB2F001CAF1C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AE19E2C8FAB2F001CAF1C /* HomeVC.swift */; };
+		0C1AE1A12C8FAB9F001CAF1C /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1AE1A02C8FAB9F001CAF1C /* Components.swift */; };
+		0CAFC3D52C91C6450034E9C3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFC3D42C91C6450034E9C3 /* Model.swift */; };
+		0CAFC3DA2C92122A0034E9C3 /* utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFC3D92C92122A0034E9C3 /* utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		0C1AE1902C8FA9B6001CAF1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C1AE1932C8FA9B6001CAF1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C1AE1952C8FA9B6001CAF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1AE19E2C8FAB2F001CAF1C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0C1AE1A02C8FAB9F001CAF1C /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		0CAFC3D42C91C6450034E9C3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0CAFC3D92C92122A0034E9C3 /* utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		0C1AE1862C8FA9B4001CAF1C /* BankUI-UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0C1AE1872C8FA9B4001CAF1C /* AppDelegate.swift */,
-				0C1AE1892C8FA9B4001CAF1C /* SceneDelegate.swift */,
+				0CAFC3D82C9210A00034E9C3 /* Utility */,
+				0CAFC3D32C91C62D0034E9C3 /* Data */,
+				0C1AE19D2C8FAA2B001CAF1C /* Resources */,
+				0C1AE19C2C8FAA0F001CAF1C /* Screens */,
+				0C1AE19B2C8FA9E6001CAF1C /* App */,
 				0C1AE18B2C8FA9B4001CAF1C /* ViewController.swift */,
 				0C1AE18D2C8FA9B4001CAF1C /* Main.storyboard */,
-				0C1AE1902C8FA9B6001CAF1C /* Assets.xcassets */,
 				0C1AE1922C8FA9B6001CAF1C /* LaunchScreen.storyboard */,
-				0C1AE1952C8FA9B6001CAF1C /* Info.plist */,
+				0C1AE1A02C8FAB9F001CAF1C /* Components.swift */,
 			);
 			path = "BankUI-UIKit";
+			sourceTree = "<group>";
+		};
+		0C1AE19B2C8FA9E6001CAF1C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0C1AE1892C8FA9B4001CAF1C /* SceneDelegate.swift */,
+				0C1AE1872C8FA9B4001CAF1C /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0C1AE19C2C8FAA0F001CAF1C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0C1AE19E2C8FAB2F001CAF1C /* HomeVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0C1AE19D2C8FAA2B001CAF1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C1AE1952C8FA9B6001CAF1C /* Info.plist */,
+				0C1AE1902C8FA9B6001CAF1C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0CAFC3D32C91C62D0034E9C3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0CAFC3D42C91C6450034E9C3 /* Model.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0CAFC3D82C9210A00034E9C3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0CAFC3D92C92122A0034E9C3 /* utility.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1AE18C2C8FA9B4001CAF1C /* ViewController.swift in Sources */,
+				0C1AE19F2C8FAB2F001CAF1C /* HomeVC.swift in Sources */,
+				0CAFC3DA2C92122A0034E9C3 /* utility.swift in Sources */,
+				0C1AE1A12C8FAB9F001CAF1C /* Components.swift in Sources */,
+				0CAFC3D52C91C6450034E9C3 /* Model.swift in Sources */,
 				0C1AE1882C8FA9B4001CAF1C /* AppDelegate.swift in Sources */,
 				0C1AE18A2C8FA9B4001CAF1C /* SceneDelegate.swift in Sources */,
 			);
@@ -294,12 +350,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ABK2TMF98V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "BankUI-UIKit/Info.plist";
+				INFOPLIST_FILE = "BankUI-UIKit/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +363,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.david.BankUI-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +380,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ABK2TMF98V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "BankUI-UIKit/Info.plist";
+				INFOPLIST_FILE = "BankUI-UIKit/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +393,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.david.BankUI-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
